@@ -9,6 +9,9 @@ return {
       statusline.section_location = function()
         return '%2l:%-2v'
       end
+
+      -- https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-indentscope.md
+      require('mini.indentscope').setup({})
     end
   }
 }

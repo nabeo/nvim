@@ -3,11 +3,15 @@ return {
     "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
-    init = function()
+    config = function()
       vim.cmd [[colorscheme tokyonight]]
     end,
     opts = {
-      style = 'day'
+      transparent = true,
+      styles = {
+        sidebars = 'transparent',
+        floats = 'transparent',
+      },
     },
   }
 }

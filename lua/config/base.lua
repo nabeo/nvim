@@ -25,3 +25,7 @@ opt.termguicolors = true
 -- disabled providers
 vim.g.loaded_perl_provider = 0    -- Need Neovim::Ext module
 vim.g.loaded_python3_provider = 0 -- Need neovim module
+
+-- 背景の透過設定
+opt.winblend = 0 -- ウィンドウの透明度
+opt.pumblend = 0 -- ポップアップの透明度

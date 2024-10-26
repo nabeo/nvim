@@ -18,6 +18,7 @@ opt.expandtab = true
 
 -- 行番号を表示
 opt.number = true
+opt.relativenumber = true
 
 opt.autoread = true
 opt.termguicolors = true

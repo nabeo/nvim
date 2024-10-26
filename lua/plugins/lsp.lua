@@ -99,7 +99,20 @@ return {
     }
 
     -- TODO: Yaml (yaml-language-server)
-    -- TODO: dockerfile (dockerfile-language-server)
+    -- dockerfile (dockerfile-language-server-nodejs)
+    -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#dockerls
+    require("lspconfig").dockerls.setup {
+      settings = {
+        docker = {
+          languageserver = {
+            formatter = {
+              ignoreMultilineInstructions = true,
+            },
+          },
+        }
+      }
+    }
+
     -- TOML (taplo)
     -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#taplo
     require("lspconfig").taplo.setup {}

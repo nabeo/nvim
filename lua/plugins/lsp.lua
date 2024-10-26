@@ -98,7 +98,18 @@ return {
       capabilities = capabilities,
     }
 
-    -- TODO: Yaml (yaml-language-server)
+    -- Yaml (yaml-language-server)
+    -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#yamlls
+    require("lspconfig").yamlls.setup {
+      settings = {
+        yaml = {
+          schemas = {
+            ["https://json.schemastore.org/github-workflow.json"] = "/.github/workflows/*",
+          },
+        },
+      }
+    }
+
     -- dockerfile (dockerfile-language-server-nodejs)
     -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#dockerls
     require("lspconfig").dockerls.setup {

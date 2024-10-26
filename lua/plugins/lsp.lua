@@ -84,7 +84,10 @@ return {
     -- https://github.com/golang/tools/blob/master/gopls/doc/vim.md
     require("lspconfig").gopls.setup {}
 
-    -- TODO: markdown (marksman)
+    -- markdown (marksman)
+    -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#marksman
+    require("lspconfig").marksman.setup {}
+
     -- TODO: Python (python-lsp-server)
     -- TODO: Rust (rust-analyzer)
     -- TODO: Json (vscode-json-languageserver)

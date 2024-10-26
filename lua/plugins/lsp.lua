@@ -90,7 +90,14 @@ return {
 
     -- TODO: Python (python-lsp-server)
     -- TODO: Rust (rust-analyzer)
-    -- TODO: Json (vscode-json-languageserver)
+    -- Json (vscode-json-language-server from vscode-langservers-extracted)
+    -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#jsonls
+    local capabilities = vim.lsp.protocol.make_client_capabilities()
+    capabilities.textDocument.completion.completionItem.snippetSupport = true
+    require("lspconfig").jsonls.setup {
+      capabilities = capabilities,
+    }
+
     -- TODO: Yaml (yaml-language-server)
     -- TODO: dockerfile (dockerfile-language-server)
     -- TODO: TOML (taplo)

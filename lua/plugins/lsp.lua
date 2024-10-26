@@ -83,5 +83,13 @@ return {
     -- Go
     -- https://github.com/golang/tools/blob/master/gopls/doc/vim.md
     require("lspconfig").gopls.setup {}
+
+    -- TODO: markdown (marksman)
+    -- TODO: Python (python-lsp-server)
+    -- TODO: Rust (rust-analyzer)
+    -- TODO: Json (vscode-json-languageserver)
+    -- TODO: Yaml (yaml-language-server)
+    -- TODO: dockerfile (dockerfile-language-server)
+    -- TODO: TOML (taplo)
   end
 }

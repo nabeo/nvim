@@ -20,7 +20,6 @@ opt.expandtab = true
 opt.number = true
 opt.relativenumber = true
 
-opt.autoread = true
 opt.termguicolors = true
 
 -- disabled providers
@@ -30,3 +29,10 @@ vim.g.loaded_python3_provider = 0 -- Need neovim module
 -- 背景の透過設定
 opt.winblend = 0 -- ウィンドウの透明度
 opt.pumblend = 0 -- ポップアップの透明度
+
+-- ファイル処理
+opt.swapfile = false
+opt.writebackup = false
+opt.backup = false
+opt.undofile = false
+opt.autoread = true

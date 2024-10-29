@@ -139,5 +139,10 @@ return {
     -- TOML (taplo)
     -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#taplo
     require("lspconfig").taplo.setup {}
+
+    -- Kotlin
+    -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#kotlin_language_server
+    -- https://github.com/fwcd/kotlin-language-server/blob/main/EDITORS.md#neovim
+    require("lspconfig").kotlin_language_server.setup {}
   end
 }

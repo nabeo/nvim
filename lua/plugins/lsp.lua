@@ -79,6 +79,7 @@ return {
     -- Terraform
     -- https://github.com/hashicorp/terraform-ls/blob/main/docs/USAGE.md
     require("lspconfig").terraformls.setup {}
+    require("lspconfig").tflint.setup{}
 
     -- Go
     -- https://github.com/golang/tools/blob/master/gopls/doc/vim.md

@@ -5,3 +5,4 @@ vim.keymap.set('n', '<C-x><C-b>', ':Telescope buffers')
 
 -- Neogit
 vim.keymap.set('n', '<C-x><C-g>', ':Neogit')
+vim.keymap.set('n', '<C-x>g', ':Neogit')

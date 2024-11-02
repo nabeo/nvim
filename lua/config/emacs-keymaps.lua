@@ -1,8 +1,10 @@
 -- Telescope
-vim.keymap.set('n', '<C-x><C-f>', ':Telescope find_files')
-vim.keymap.set('n', '<C-x>b', ':Telescope buffers')
-vim.keymap.set('n', '<C-x><C-b>', ':Telescope buffers')
+local telescope = require('telescope.builtin')
+vim.keymap.set('n', '<C-x><C-f>', telescope.find_files)
+vim.keymap.set('n', '<C-x>b', telescope.buffers)
+vim.keymap.set('n', '<C-x><C-b>', telescope.buffers)
 
 -- Neogit
-vim.keymap.set('n', '<C-x><C-g>', ':Neogit')
-vim.keymap.set('n', '<C-x>g', ':Neogit')
+local neogit = require('neogit')
+vim.keymap.set('n', '<C-x><C-g>', neogit.open)
+vim.keymap.set('n', '<C-x>g', neogit.open)

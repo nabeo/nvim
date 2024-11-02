@@ -12,6 +12,9 @@ return {
 
       -- https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-indentscope.md
       require('mini.indentscope').setup({})
+
+      -- https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-pairs.md
+      require('mini.pairs').setup {}
     end
   }
 }

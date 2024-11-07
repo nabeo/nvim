@@ -14,6 +14,7 @@ return {
           'bash',
           'lua',
           'diff',
+          'graphql',
           'hcl',
           'html',
           'java',

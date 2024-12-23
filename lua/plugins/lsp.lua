@@ -91,7 +91,9 @@ return {
       require("lspconfig").marksman.setup {}
 
       -- TODO: Python (python-lsp-server)
-      -- TODO: Rust (rust-analyzer)
+      -- Rust (rust-analyzer)
+      require("lspconfig").rust_analyzer.setup {}
+
       -- Json (vscode-json-language-server from vscode-langservers-extracted)
       -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#jsonls
       local capabilities = vim.lsp.protocol.make_client_capabilities()

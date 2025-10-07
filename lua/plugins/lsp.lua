@@ -44,7 +44,7 @@ return {
     vim.lsp.enable('graphql')
 
     -- Kotlin (kotlin-lsp)
-    -- vim.lsp.enable('kotlin_lsp')
+    vim.lsp.enable('kotlin_lsp')
 
     -- Ruby (ruby-lsp)
     vim.lsp.enable('ruby_lsp')

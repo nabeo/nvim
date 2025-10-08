@@ -1,7 +1,12 @@
 --- @type vim.lsp.Config
 -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#yamlls
 return {
+  filteypes = { 'yaml', 'yaml.docker-compose' },
+  root_makers = { '.git' },
   settings = {
+    redhat = {
+      telemetry = false,
+    },
     yaml = {
       schemaStore = {
         enable = true,
@@ -20,4 +25,8 @@ return {
       completion = true,
     },
   },
+  on_init = function(client)
+    --- https://github.com/neovim/nvim-lspconfig/pull/4016
+    client.server_capabilities.documentFormattingProvider = true
+  end,
 }
